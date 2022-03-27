@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.vocabularyapp.app.presentation.navigation.AppNavigation
+import com.example.vocabularyapp.common_ui.components.CustomToolbar
 import com.example.vocabularyapp.featureHome.presentation.components.wordItem.WordItem
 import com.example.vocabularyapp.featureHome.presentation.components.wordToolbar.WordToolbar
 
@@ -33,6 +34,8 @@ fun CategoryDescriptionScreen(
     ) {
         Column(modifier = Modifier.fillMaxWidth()) {
 
+            CustomToolbar(text = "", onBackClick = { /*TODO*/ })
+            
             WordToolbar()
 
             LazyColumn {

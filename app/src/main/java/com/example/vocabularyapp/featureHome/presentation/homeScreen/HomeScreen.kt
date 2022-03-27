@@ -23,6 +23,7 @@ fun HomeScreen(
 ) {
 
     var isDialogOpen by remember { mutableStateOf(false) }
+    /*val stateCategories by viewModel.*/
 
     Scaffold(
         floatingActionButton = {
